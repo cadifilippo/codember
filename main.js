@@ -3,7 +3,9 @@ import javascriptLogo from './javascript.svg';
 import { setupCounter } from './counter.js';
 import { challenge01 } from './challenge01.js';
 
-challenge01();
+(async () => {
+  console.log(await challenge01());
+})();
 
 document.querySelector('#app').innerHTML = `
   <div>
